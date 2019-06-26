@@ -1,4 +1,7 @@
+use std::fs::File;
+
 fn main() -> Result<(), std::io::Error> {
-    println!("Hello, world!");
+    let _f = File::open("bar.txt")?;
+
     Ok(())
 }
